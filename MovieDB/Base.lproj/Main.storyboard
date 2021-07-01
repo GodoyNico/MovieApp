@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="popular-movies-cell" rowHeight="130" id="JR7-Zs-GaD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="popular-movies-cell" rowHeight="130" id="JR7-Zs-GaD" customClass="MoviesViewCell" customModule="MovieDB" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JR7-Zs-GaD" id="kaZ-GC-Mkg">
@@ -80,6 +80,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="movieImage" destination="hRX-RH-bWL" id="rm2-cw-0Rb"/>
+                                            <outlet property="overviewLabel" destination="cGf-G1-GOs" id="DSe-7u-xqL"/>
+                                            <outlet property="ratingLabel" destination="ccV-Mx-A9m" id="3cJ-bS-zwZ"/>
+                                            <outlet property="titleLabel" destination="78F-k1-4aY" id="NeP-ca-szQ"/>
                                             <segue destination="pOj-4t-q6w" kind="show" id="egX-I1-1OS"/>
                                         </connections>
                                     </tableViewCell>
@@ -163,6 +167,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="NSZ-pw-Hey"/>
+                    <connections>
+                        <outlet property="searchBar" destination="AQI-ZJ-CVd" id="rEu-cy-tPI"/>
+                        <outlet property="tableView" destination="Hq8-Kn-Yhe" id="10U-Oo-4AR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
