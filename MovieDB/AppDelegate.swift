@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  MovieDB
-//
-//  Created by Nicolas Godoy on 30/06/21.
-//
 
 import UIKit
 

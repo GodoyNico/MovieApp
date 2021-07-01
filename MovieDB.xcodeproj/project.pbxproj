@@ -13,6 +13,8 @@
 		5D1591DD268D113A00416119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1591DB268D113A00416119 /* Main.storyboard */; };
 		5D1591DF268D113C00416119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1591DE268D113C00416119 /* Assets.xcassets */; };
 		5D1591E2268D113C00416119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1591E0268D113C00416119 /* LaunchScreen.storyboard */; };
+		5D1591EC268D339D00416119 /* MoviesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1591EB268D339D00416119 /* MoviesViewCell.swift */; };
+		5D1591EE268D33B400416119 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1591ED268D33B400416119 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5D1591DE268D113C00416119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D1591E1268D113C00416119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D1591E3268D113C00416119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D1591EB268D339D00416119 /* MoviesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewCell.swift; sourceTree = "<group>"; };
+		5D1591ED268D33B400416119 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		5D1591D4268D113A00416119 /* MovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				5D1591E9268D334D00416119 /* ViewCells */,
+				5D1591EA268D335C00416119 /* ViewController */,
 				5D1591D5268D113A00416119 /* AppDelegate.swift */,
 				5D1591D7268D113A00416119 /* SceneDelegate.swift */,
 				5D1591D9268D113A00416119 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				5D1591E3268D113C00416119 /* Info.plist */,
 			);
 			path = MovieDB;
+			sourceTree = "<group>";
+		};
+		5D1591E9268D334D00416119 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5D1591EB268D339D00416119 /* MoviesViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		5D1591EA268D335C00416119 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D1591ED268D33B400416119 /* MoviesViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1591DA268D113A00416119 /* ViewController.swift in Sources */,
+				5D1591EE268D33B400416119 /* MoviesViewController.swift in Sources */,
+				5D1591EC268D339D00416119 /* MoviesViewCell.swift in Sources */,
 				5D1591D6268D113A00416119 /* AppDelegate.swift in Sources */,
 				5D1591D8268D113A00416119 /* SceneDelegate.swift in Sources */,
 			);
