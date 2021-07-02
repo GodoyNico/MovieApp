@@ -31,6 +31,11 @@ struct MovieInfo: CustomStringConvertible, Decodable {
     }
 }
 
+struct Genres: Decodable {
+    let id: Int
+    let name: String
+}
+
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var moviesInfo: [MovieInfo] = []
@@ -77,7 +82,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             return UITableViewCell()
         }
         let movie = moviesInfo[indexPath.row]
-        cell.setupCell(title: movie.title, description: movie.description, rating: movie.rating)
+        cell.setupCell(title: movie.title, description: movie.overview, rating: movie.rating)
         return cell
     }
 
@@ -93,6 +98,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 }
             }
         }.resume()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieDetail = moviesInfo[indexPath.row]
+        performSegue(withIdentifier: "movieDetails", sender: movieDetail)
     }
 
 }

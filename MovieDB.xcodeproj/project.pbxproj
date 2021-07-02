@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0A6E8A268F97E300A61D9C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0A6E89268F97E300A61D9C /* DetailViewController.swift */; };
+		5D0A6E8C268F984300A61D9C /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0A6E8B268F984300A61D9C /* DetailViewCell.swift */; };
 		5D1591D6268D113A00416119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1591D5268D113A00416119 /* AppDelegate.swift */; };
 		5D1591D8268D113A00416119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1591D7268D113A00416119 /* SceneDelegate.swift */; };
 		5D1591DA268D113A00416119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1591D9268D113A00416119 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0A6E89268F97E300A61D9C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5D0A6E8B268F984300A61D9C /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
 		5D1591D2268D113A00416119 /* MovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1591D5268D113A00416119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D1591D7268D113A00416119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5D1591EB268D339D00416119 /* MoviesViewCell.swift */,
+				5D0A6E8B268F984300A61D9C /* DetailViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5D1591ED268D33B400416119 /* MoviesViewController.swift */,
+				5D0A6E89268F97E300A61D9C /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			files = (
 				5D1591DA268D113A00416119 /* ViewController.swift in Sources */,
 				5D1591EE268D33B400416119 /* MoviesViewController.swift in Sources */,
+				5D0A6E8C268F984300A61D9C /* DetailViewCell.swift in Sources */,
 				5D1591EC268D339D00416119 /* MoviesViewCell.swift in Sources */,
+				5D0A6E8A268F97E300A61D9C /* DetailViewController.swift in Sources */,
 				5D1591D6268D113A00416119 /* AppDelegate.swift in Sources */,
 				5D1591D8268D113A00416119 /* SceneDelegate.swift in Sources */,
 			);

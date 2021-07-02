@@ -26,7 +26,7 @@ class MoviesViewCell: UITableViewCell {
         movieImage.layer.cornerRadius = 8
         titleLabel.text = title
         overviewLabel.text = description
-        ratingLabel.text = "* \(rating)"
+        ratingLabel.text = "\(rating)"
     }
 
     func setImage(_ image: UIImage?) {
