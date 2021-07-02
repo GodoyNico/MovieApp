@@ -16,12 +16,21 @@ class MoviesViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    func setupCell(title: String, description: String, rating: Int, image: UIImage) {
-        movieImage.image = image
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        movieImage.image = nil
+    }
+
+    func setupCell(title: String, description: String, rating: Double) {
         movieImage.layer.cornerRadius = 8
         titleLabel.text = title
         overviewLabel.text = description
         ratingLabel.text = "* \(rating)"
+    }
+
+    func setImage(_ image: UIImage?) {
+        movieImage.image = image
+        layoutIfNeeded()
     }
 }
