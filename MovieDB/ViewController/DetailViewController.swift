@@ -10,7 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     var movie: MovieInfo?
-    var genres: [Genres] = []
+    //var genres: [Genres] = []
     
     @IBOutlet weak var tableView: UITableView!
     
